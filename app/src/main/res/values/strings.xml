@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">小农夫</string>
+    <string name="gengdi1">耕地1</string>
+    <string name="gengdi2">耕地2</string>
+    <string name="gengdi3">耕地3</string>
+    <string name="gengdi4">耕地4</string>
+</resources>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/drawer_layout"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:background="@drawable/caodi2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:text="向右滑动查看农场主信息"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textColor="#aa0000"
+            android:layout_height="20dp"
+            android:id="@+id/textView2" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+
+            <Button
+                android:text="B棚区"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gengdi2"
+                android:background="#88aaff"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/gengdi1"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="28dp" />
+
+            <Button
+                android:text="D棚区"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gengdi4"
+                android:background="#cc9966"
+                android:layout_marginBottom="42dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:text="C棚区"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gengdi3"
+                android:background="#cc9999"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:text="A棚区"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gengdi1"
+                android:background="#66aa66"
+                android:layout_alignParentTop="true"
+                android:layout_toStartOf="@+id/gengdi4" />
+        </RelativeLayout>
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:id="@+id/linear_layout"
+        android:orientation="vertical"
+        android:background="#aaccff"
+        android:layout_gravity="start">
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/img_button"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:background="@drawable/touxiang"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="农场主：张宜飞"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:gravity="center"
+
+            />
+
+        <ListView
+            android:id="@+id/left_drawr"
+            android:layout_width="match_parent"
+            android:background="#8888ff"
+            android:layout_height="300dp"
+
+            >
+        </ListView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/button_xiugai"
+                android:background="#5544cc"
+                android:layout_weight="0.5"
+                android:textSize="15dp"
+                android:text="修改作物情况"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/button_tuichu"
+                android:layout_weight="0.5"
+                android:background="#5544cc"
+                android:textSize="15dp"
+                android:text="退出"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>
